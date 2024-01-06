@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Sea battle</title>
+    <link rel="stylesheet" href="menu_styles.css">
+</head>
+<body>
+    <div id="MainContainer">
+
+        <div id="MenuContainer">
+            <img src="battleship_silhouette.png" width="256">
+            <h1 id="GameTitle">Sea battle</h1>
+
+            <button class="MenuButton" onclick="buttonClick(0)">Singleplayer</button>
+            <button class="MenuButton" onclick="buttonClick(1)">Multiplayer</button>
+            <button class="MenuButton">Settings</button>
+
+            <script>
+                function buttonClick(mode){
+                    if(mode === 0)
+                        localStorage.setItem("gameMode", "singleplayer");
+                    else
+                        localStorage.setItem("gameMode", "multiplayer");
+                    window.location.href = "game.html";
+                }
+            </script>
+        </div>
+    </div>
+</body>
+</html>

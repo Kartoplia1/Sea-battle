@@ -1,0 +1,46 @@
+body{
+    background-color: deepskyblue;
+}
+
+#MainContainer{
+    width: 100%;
+    height: 700px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#GameTitle{
+    display: block;
+    font: 70px "Brush Script MT";
+    margin: 0;
+}
+
+#MenuContainer{
+    width: auto;
+    text-align: center;
+    background-color: #8bb5e5;
+    padding: 20px;
+    border-radius: 30px;
+    border-style: solid;
+    border-color: #091933;
+    border-width: 5px;
+}
+.MenuButton{
+    text-align: center;
+    transition-duration: 0.4s;
+    font: 28px "Segoe UI";
+    display: inline-block;
+    background-color: deepskyblue;
+    width: 200px;
+    height: 55px;
+    border-radius: 10px;
+    border-style: solid;
+    border-color: #091933;
+    border-width: 3px;
+    margin: 20px 10px 10px 10px;
+}
+
+.MenuButton:hover{
+    background-color: lightskyblue;
+}

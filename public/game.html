@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Sea battle</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="HeaderDiv">
+        <div id="InfoBox">
+            <p id="TurnLabel">Turn: </p>
+            <p id="InfoLabel">Info: </p>
+        </div>
+        <div id="PlayerBox">
+            <div class="PlayerInfo" id="Player1">
+                Player 1:
+                <div class="Connected">Connected <span></span></div>
+                <div class="Ready">Ready <span></span></div>
+            </div>
+            <div class="PlayerInfo" id="Player2">
+                Player 2:
+                <div class="Connected">Connected <span></span></div>
+                <div class="Ready">Ready <span></span></div>
+            </div>
+        </div>
+    </div>
+
+    <div id="ModalWindowContainer" class="Hidden">
+        <div class="Modal">
+            <div>
+                <p id="ModalHeader">You've won!</p>
+                <p>Return to main menu or play again?</p>
+            </div>
+            <div id="ModalButtonContainer">
+                <a href="index.html"><button class="ModalButton">To menu</button></a>
+                <a href="game.html"><button class="ModalButton">Play again</button></a>
+            </div>
+        </div>
+    </div>
+
+    <div id="Overlay" class="Hidden"></div>
+
+    <div id="AllGameBoardsContainer">
+            <div class="GameBoardContainer">
+                <p class="BoardTitle">Player's board</p>
+                <div class="GameBoard" id="PlayerBoard"></div>
+            </div>
+            <div class="GameBoardContainer">
+                <h3 class="BoardTitle">Computer's board</h3>
+                <div class="GameBoard" id="ComputerBoard"></div>
+            </div>
+    </div>
+
+    <div id="ButtonContainer">
+        <button class="GameButton" id="RotateButton">Rotate ships</button>
+        <button class="GameButton" id="ReadyButton">Ready</button>
+    </div>
+
+    <img id="Anchor" src="anchor.png">
+    <div id="DockContainer">
+        <div id="Dock">
+            <div id="0" class="OneDeckDocked" draggable="true"></div>
+            <div id="1" class="OneDeckDocked" draggable="true"></div>
+            <div id="2" class="OneDeckDocked" draggable="true"></div>
+            <div id="3" class="OneDeckDocked" draggable="true"></div>
+            <div id="4" class="TwoDeckDocked" draggable="true"></div>
+            <div id="5" class="TwoDeckDocked" draggable="true"></div>
+            <div id="6" class="TwoDeckDocked" draggable="true"></div>
+            <div id="7" class="ThreeDeckDocked" draggable="true"></div>
+            <div id="8" class="ThreeDeckDocked" draggable="true"></div>
+            <div id="9" class="FourDeckDocked" draggable="true"></div>
+        </div>
+    </div>
+
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="game.js" charset="utf-8"></script>
+</body>
+</html>

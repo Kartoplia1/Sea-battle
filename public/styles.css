@@ -1,0 +1,298 @@
+#DockContainer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#Dock{
+    width: 90%;
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url("grid_background.webp");
+    background-size: 500px 300px;
+    border-radius: 8px;
+    border-style: solid;
+    border-color: #091933;
+    border-width: 4px;
+
+}
+
+#Anchor{
+    width: 100px;
+    height: 100px;
+    transform: rotate(30deg);
+    margin-left: -100px;
+    margin-top: -100px;
+    position: absolute;
+    top: 750px;
+    right: 1380px;
+}
+
+#ButtonContainer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+}
+
+
+.GameButton{
+    text-align: center;
+
+    font: 25px "Segoe UI";
+    font-weight: normal;
+    display: inline-block;
+    background: deepskyblue;
+    padding: 5px;
+
+    border-radius: 4px;
+    border-style: solid;
+    border-color: #091933;
+    border-width: 2px;
+    margin-right: 10px;
+}
+#HeaderDiv{
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+#InfoBox{
+    width: 500px;
+    font: 20px "Segoe UI";
+    border-radius: 4px;
+    border-style: solid;
+    border-color: #091933;
+    border-width: 2px;
+    margin-bottom: 10px;
+    padding-left: 10px;
+}
+#PlayerBox{
+    padding: 5px;
+    border-radius: 4px;
+    border-style: solid;
+    border-color: #091933;
+    border-width: 2px;
+    font: 20px "Segoe UI";
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+}
+#PlayerBox div{
+    margin: 5px;
+}
+
+.PlayerInfo{
+    margin-right: 10px;
+}
+
+#AllGameBoardsContainer{
+    background-color: coral;
+    border-radius: 15px;
+    border-style: solid;
+    border-color: #091933;
+    border-width: 4px;
+    padding: 20px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.GameBoardContainer{
+    margin-right: 30px;
+    display: inline-block;
+}
+
+.GameBoard{
+    background-color: deepskyblue;
+    width: 400px;
+    height: 400px;
+    border-radius: 4px;
+    border-style: solid;
+    border-color: #091933;
+    border-width: 4px;
+    display: flex;
+    flex-wrap: wrap;
+}
+.BoardTitle{
+    text-align: center;
+    font: 20px "Segoe UI";
+    margin: 0 0 15px 0;
+}
+
+.BoardCell{
+    width: 40px;
+    height: 40px;
+    border: solid 1px black;
+    box-sizing: border-box;
+}
+
+
+
+/*ships*/
+.OneDeckDocked{
+    width: 40px;
+    height: 40px;
+    background-color: #c4c4c4;
+    margin: 5px;
+
+    border-radius: 6px;
+    border-style: solid;
+    border-color: #091933;
+    border-width: 3px;
+}
+.TwoDeckDocked{
+    width: 80px;
+    height: 40px;
+    background-color: #c4c4c4;
+    margin: 5px;
+
+    border-radius: 6px;
+    border-style: solid;
+    border-color: #091933;
+    border-width: 3px;
+}
+.ThreeDeckDocked{
+    width: 120px;
+    height: 40px;
+    background-color: #c4c4c4;
+    margin: 5px;
+
+    border-radius: 6px;
+    border-style: solid;
+    border-color: #091933;
+    border-width: 3px;
+}
+.FourDeckDocked{
+    width: 160px;
+    height: 40px;
+    background-color: #c4c4c4;
+    margin: 5px;
+
+    border-radius: 6px;
+    border-style: solid;
+    border-color: #091933;
+    border-width: 3px;
+}
+
+.OneDeck{
+    background-color: #c4c4c4;
+}
+.TwoDeck{
+    background-color: #c4c4c4;
+}
+.ThreeDeck{
+    background-color: #c4c4c4;
+}
+.FourDeck{
+    background-color: #c4c4c4;
+}
+
+#ComputerBoard .OneDeck,
+#ComputerBoard .TwoDeck,
+#ComputerBoard .ThreeDeck,
+#ComputerBoard .FourDeck{
+    background-color: deepskyblue;
+}
+
+
+.Destroyed{
+    background-color: red !important;
+}
+
+.Empty{
+    background-color: grey !important;
+}
+
+/*modal window*/
+
+.Hidden{
+    display: none !important;
+}
+
+#ModalWindowContainer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.Modal {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 0.4rem;
+    width: 450px;
+    padding: 1.3rem;
+    position: absolute;
+    top: 20%;
+    background-color: white;
+    border: 3px solid #091933;
+    border-radius: 17px;
+    z-index: 2;
+}
+
+#ModalHeader{
+    text-align: center;
+    font: 30px "Segoe UI";
+    font-weight: 700;
+}
+
+#ModalButtonContainer{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.Modal p{
+    text-align: center;
+    font: 20px "Segoe UI";
+    font-weight: 400;
+}
+
+.ModalButton {
+    display: inline-block;
+    padding: 10px 10px;
+    font: 20px "Trebuchet MS";
+    font-weight: 800;
+    background-color: deepskyblue;
+    border-radius: 5px;
+    text-align: center;
+    margin: 10px;
+}
+
+.ModalButton:hover{
+    background-color: lightskyblue;
+}
+
+#Overlay {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(3px);
+    z-index: 1;
+}
+
+.Connected, .Ready{
+    font: 17px "Segoe UI";
+}
+
+.Connected span,
+.Ready span{
+    display: inline-block;
+    width: 1rem;
+    height: 1rem;
+    background-color: #de3636;
+    border: black solid 2px;
+    border-radius: 5px;
+}
+span.green{
+    background-color: #1c981c;
+}
