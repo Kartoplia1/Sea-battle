@@ -10,7 +10,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    background-image: url("grid_background.webp");
+    background-image: url("images/grid_background.webp");
     background-size: 500px 300px;
     border-radius: 8px;
     border-style: solid;
